@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -60,6 +60,46 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-html概述和基本结构" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/05/02/html概述和基本结构/" class="article-date">
+  <time datetime="2017-05-02T10:47:07.037Z" itemprop="datePublished">2017-05-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="html概述和基本结构"><a href="#html概述和基本结构" class="headerlink" title="html概述和基本结构"></a>html概述和基本结构</h2><h3 id="html概述"><a href="#html概述" class="headerlink" title="html概述"></a>html概述</h3><p>HTML是 HyperText Mark-up Language 的首字母简写，意思是超文本标记语言，超文本指的是超链接，标记指的是标签，是一种用来制作网页的语言，这种语言由一个个的标签组成，用这种语言制作的文件保存的是一个文本文件，文件的扩展名为html或者htm，一个html文件就是一个网页，html文件用编辑器打开显示的是文本，可以用文本的方式编辑它，如果用浏览器打开，浏览器会按照标签描述内容将文件渲染成网页，显示的网页可以从一个网页链接跳转到另外一个网页。</p>
+<h3 id="html基本结构"><a href="#html基本结构" class="headerlink" title="html基本结构"></a>html基本结构</h3><p>一个html的基本结构如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">    &lt;head&gt;            </div><div class="line">        &lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">        &lt;title&gt;网页标题&lt;/title&gt;</div><div class="line">    &lt;/head&gt;</div><div class="line">    &lt;body&gt;</div><div class="line">          网页显示内容</div><div class="line">    &lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<p>第一行是文档声明，第二行“<html>”标签和最后一行“</html>”定义html文档的整体，“<html>”标签中的‘lang=“en”’定义网页的语言为英文，定义成中文是’lang=”zh-CN”‘,不定义也没什么影响，它一般作为分析统计用。 “<head>”标签和“</head><body>”标签是它的第一层子元素，“<head>”标签里面负责对网页进行一些设置以及定义标题，设置包括定义网页的编码格式，外链css样式文件和javascript文件等，设置的内容不会显示在网页上，标题的内容会显示在标题栏，“</head><body>”内编写网页上显示的内容。</body></body></html></p>
+<h3 id="HTML文档类型"><a href="#HTML文档类型" class="headerlink" title="HTML文档类型"></a>HTML文档类型</h3><p>目前常用的两种文档类型是xhtml 1.0和html5</p>
+<h4 id="xhtml-1-0"><a href="#xhtml-1-0" class="headerlink" title="xhtml 1.0"></a>xhtml 1.0</h4><p>xhtml 1.0 是html5之前的一个常用的版本，目前许多网站仍然使用此版本。<br>此版本文档用sublime text创建方法： html:xt + tab<br>文档示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</div><div class="line">&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=UTF-8&quot;&gt;</div><div class="line">    &lt;title&gt; xhtml 1.0 文档类型 &lt;/title&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line"></div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<h4 id="html5"><a href="#html5" class="headerlink" title="html5"></a>html5</h4><p>pc端可以使用xhtml 1.0，也可以使用html5，html5是向下兼容的<br>此版本文档用sublime text创建方法： html:5 + tab 或者 ! + tab<br>文档示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">    &lt;title&gt; html5文档类型 &lt;/title&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line"></div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<h2 id="两种文档的区别"><a href="#两种文档的区别" class="headerlink" title="两种文档的区别"></a>两种文档的区别</h2><ol>
+<li>文档声明和编码声明</li>
+<li>html5新增了标签元素以及元素属性</li>
+</ol>
+<h2 id="html注释："><a href="#html注释：" class="headerlink" title="html注释："></a>html注释：</h2><p>html文档代码中可以插入注释，注释是对代码的说明和解释，注释的内容不会显示在页面上，html代码中插入注释的方法是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 这是一段注释  --&gt;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/05/02/html概述和基本结构/" data-id="cj27flytk0001u0jdz4rtit6d" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-article-title" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -83,18 +123,26 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="123"><a href="#123" class="headerlink" title="123"></a>123</h3><p>feweifjwofjwio</p>
-<p>wfwef</p>
-<p>wfwe</p>
-<p>f</p>
-<p>wf</p>
-<h2 id="fwefwe"><a href="#fwefwe" class="headerlink" title="fwefwe"></a>fwefwe</h2><sdf>
+        <h2 id="html概述和基本结构"><a href="#html概述和基本结构" class="headerlink" title="html概述和基本结构"></a>html概述和基本结构</h2><h3 id="html概述"><a href="#html概述" class="headerlink" title="html概述"></a>html概述</h3><p>HTML是 HyperText Mark-up Language 的首字母简写，意思是超文本标记语言，超文本指的是超链接，标记指的是标签，是一种用来制作网页的语言，这种语言由一个个的标签组成，用这种语言制作的文件保存的是一个文本文件，文件的扩展名为html或者htm，一个html文件就是一个网页，html文件用编辑器打开显示的是文本，可以用文本的方式编辑它，如果用浏览器打开，浏览器会按照标签描述内容将文件渲染成网页，显示的网页可以从一个网页链接跳转到另外一个网页。</p>
+<h3 id="html基本结构"><a href="#html基本结构" class="headerlink" title="html基本结构"></a>html基本结构</h3><p>一个html的基本结构如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">    &lt;head&gt;            </div><div class="line">        &lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">        &lt;title&gt;网页标题&lt;/title&gt;</div><div class="line">    &lt;/head&gt;</div><div class="line">    &lt;body&gt;</div><div class="line">          网页显示内容</div><div class="line">    &lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<p>第一行是文档声明，第二行“<html>”标签和最后一行“</html>”定义html文档的整体，“<html>”标签中的‘lang=“en”’定义网页的语言为英文，定义成中文是’lang=”zh-CN”‘,不定义也没什么影响，它一般作为分析统计用。 “<head>”标签和“</head><body>”标签是它的第一层子元素，“<head>”标签里面负责对网页进行一些设置以及定义标题，设置包括定义网页的编码格式，外链css样式文件和javascript文件等，设置的内容不会显示在网页上，标题的内容会显示在标题栏，“</head><body>”内编写网页上显示的内容。</body></body></html></p>
+<h3 id="HTML文档类型"><a href="#HTML文档类型" class="headerlink" title="HTML文档类型"></a>HTML文档类型</h3><p>目前常用的两种文档类型是xhtml 1.0和html5</p>
+<h4 id="xhtml-1-0"><a href="#xhtml-1-0" class="headerlink" title="xhtml 1.0"></a>xhtml 1.0</h4><p>xhtml 1.0 是html5之前的一个常用的版本，目前许多网站仍然使用此版本。<br>此版本文档用sublime text创建方法： html:xt + tab<br>文档示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</div><div class="line">&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=UTF-8&quot;&gt;</div><div class="line">    &lt;title&gt; xhtml 1.0 文档类型 &lt;/title&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line"></div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<h4 id="html5"><a href="#html5" class="headerlink" title="html5"></a>html5</h4><p>pc端可以使用xhtml 1.0，也可以使用html5，html5是向下兼容的<br>此版本文档用sublime text创建方法： html:5 + tab 或者 ! + tab<br>文档示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">    &lt;title&gt; html5文档类型 &lt;/title&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line"></div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<h2 id="两种文档的区别"><a href="#两种文档的区别" class="headerlink" title="两种文档的区别"></a>两种文档的区别</h2><ol>
+<li>文档声明和编码声明</li>
+<li>html5新增了标签元素以及元素属性</li>
+</ol>
+<h2 id="html注释："><a href="#html注释：" class="headerlink" title="html注释："></a>html注释：</h2><p>html文档代码中可以插入注释，注释是对代码的说明和解释，注释的内容不会显示在页面上，html代码中插入注释的方法是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 这是一段注释  --&gt;</div></pre></td></tr></table></figure>
 
-</sdf>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/05/02/article-title/" data-id="cj27f8sw30000wsjd2dfxhpil" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/05/02/article-title/" data-id="cj27flyss0000u0jdtk8cwivh" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -139,7 +187,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/05/02/hello-world/" data-id="cj27f8swf0001wsjdsaxncijb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/05/02/hello-world/" data-id="cj27flytp0002u0jdeyff6197" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -174,9 +222,13 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/05/02/html概述和基本结构/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2017/05/02/article-title/">Python</a>
@@ -199,7 +251,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
